@@ -1,6 +1,6 @@
 {
 	"name": "clipboard-cli",
-	"version": "2.0.0",
+	"version": "2.1.0",
 	"description": "Access the system clipboard (copy/paste)",
 	"license": "MIT",
 	"repository": "4lch4/clipboard-cli",
@@ -16,11 +16,28 @@
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava",
+		"pack": "pkg --out-path=dist/ . && np --no-publish"
 	},
 	"files": [
 		"cli.js"
 	],
+	"pkg": {
+		"targets": [
+			"node8-linux",
+			"node8-win",
+			"node8-macos",
+			"node10-linux",
+			"node10-win",
+			"node10-macos",
+			"node12-linux",
+			"node12-win",
+			"node12-macos",
+			"node14-linux",
+			"node14-win",
+			"node14-macos"
+		]
+	},
 	"keywords": [
 		"cli-app",
 		"cli",
