@@ -1,14 +1,21 @@
 {
 	"name": "clipboard-cli",
-	"version": "2.2.0",
+	"version": "2.1.0",
 	"description": "Access the system clipboard (copy/paste)",
 	"license": "MIT",
 	"repository": "4lch4/clipboard-cli",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"contributors": [
+		{
+			"name": "4lch4",
+			"url": "https://4lch4.dev",
+			"email": "hey@4lch4.dev"
+		}
+	],
 	"bin": {
 		"clipboard": "cli.js"
 	},
