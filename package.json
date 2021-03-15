@@ -8,7 +8,8 @@
 		"test": "xo && ava",
 		"clean": "rm -rf node_modules *-lock.* release/",
 		"prepackage": "npm run clean && npm i",
-		"package": "pkg --out-path=release/ ."
+		"package": "pkg --out-path=release/ .",
+		"release": "np --no-publish"
 	},
 	"author": {
 		"name": "Sindre Sorhus",
