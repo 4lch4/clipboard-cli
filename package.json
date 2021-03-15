@@ -4,6 +4,12 @@
 	"description": "Access the system clipboard (copy/paste)",
 	"license": "MIT",
 	"repository": "4lch4/clipboard-cli",
+	"scripts": {
+		"test": "xo && ava",
+		"clean": "rm -rf node_modules *-lock.* release/",
+		"prepackage": "npm run clean && npm i",
+		"package": "pkg --out-path=release/ ."
+	},
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
@@ -22,27 +28,14 @@
 	"engines": {
 		"node": ">=8"
 	},
-	"scripts": {
-		"test": "xo && ava",
-		"pack": "pkg --out-path=dist/ . && np --no-publish"
-	},
 	"files": [
 		"cli.js"
 	],
 	"pkg": {
 		"targets": [
-			"node8-linux",
-			"node8-win",
-			"node8-macos",
-			"node10-linux",
-			"node10-win",
-			"node10-macos",
-			"node12-linux",
-			"node12-win",
-			"node12-macos",
-			"node14-linux",
-			"node14-win",
-			"node14-macos"
+			"linux",
+			"win",
+			"macos"
 		]
 	},
 	"keywords": [
