@@ -9,7 +9,7 @@
 		"clean": "rm -rf node_modules *-lock.* release/",
 		"prepackage": "npm run clean && npm i",
 		"package": "pkg --out-path=release/ .",
-		"release": "np --no-publish"
+		"release": "npm run package && np --no-publish"
 	},
 	"author": {
 		"name": "Sindre Sorhus",
